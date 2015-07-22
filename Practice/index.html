@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>各种练习</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+	</head>
+	<body>
+	<!--<frameset rows="160,100" dir="rtl">
+		<frame src="html/topFrame.html" />
+		<frameset cols="50%,50%">
+			<frame src="html/bodyLeftFrame.html" />
+			<frame src="html/bodyRightFrame.html" />
+		</frameset>
+
+
+	</frameset>-->
+	<table><tr>
+	<td style="width: 100px;height: 100px;"></td>
+	</tr></table>
+	</body>
+	<script>
+			/*alert(window.frames[0]);
+			console.log(window.screenLeft + "sdf"+window.screenTop);*/
+			var table=document.getElementsByTagName("td");
+				/*for(var i=0;i<table.length;i++)
+				{
+					table[i].style.background="red";
+				}*/
+				/*for(var t in table)
+				{
+					alert(table[t]);
+					table[t].style.backgroundColor = "red";
+				}*/
+			var outer = [];
+			outer["first"] = 1;
+			outer["second"] = 2;
+
+			for (key in outer){
+				console.log(key);
+			}
+
+			if(typeof (window.onload = new Function() ) === "function"){
+				alert("David");
+			}
+		</script>
+</html>
